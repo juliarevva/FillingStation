@@ -1,0 +1,35 @@
+public class Main {
+    public static void main(String[] args) {
+        int milkAmount = 500; // ml
+        int powderAmount = 500; // g
+        int eggsCount = 5; // items
+        int sugarAmount = 15; // g
+        int oilAmount = 30; // ml
+        int appleCount = 8;
+
+        boolean pancakesRecipe = powderAmount >= 400 && sugarAmount >= 10 && milkAmount >= 1 && oilAmount >= 30;
+        boolean omletteRecipe = milkAmount >=300 && powderAmount >= 5 && eggsCount >= 5;
+        boolean applePieRecipe = appleCount >=3 && milkAmount >= 100 && powderAmount >=300 && eggsCount >= 4;
+
+        boolean ingredientsEnough = false;
+
+        System.out.println("You can cook: ");
+
+        if (pancakesRecipe) {
+            System.out.println("Pancakes");
+            ingredientsEnough = true;
+        }
+
+        if (omletteRecipe) {
+            System.out.println("Omelette");
+            ingredientsEnough = true;
+        }
+        if (applePieRecipe) {
+            System.out.println("Apple pie");
+            ingredientsEnough = true;
+        }
+        if (!ingredientsEnough) {
+            System.out.println("Sorry, Ingredient is not enough");
+        }
+    }
+}
