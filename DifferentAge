@@ -32,8 +32,8 @@ public class DifferentAge {
             min = katyaAge;
         }
 
-        System.out.println("MinimalAge " + min);
-        System.out.println("MiddleAge " + middle);
-        System.out.println("MaximumAge " + max);
+        System.out.println("Minimal age " + min);
+        System.out.println("Middle age " + middle);
+        System.out.println("Maximum age " + max);
     }
 }
