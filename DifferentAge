@@ -1,0 +1,39 @@
+public class DifferentAge {
+    public static void main(String[] args) {
+        int vasyaAge = 17;
+        int katyaAge = 17;
+        int mishaAge = 36;
+
+        int min = -1;
+        int middle = -1;
+        int max = -1;
+
+        if (vasyaAge >= katyaAge && vasyaAge >= mishaAge) {
+            max = vasyaAge;
+        } else if (vasyaAge > katyaAge && vasyaAge < mishaAge) {
+            middle = vasyaAge;
+        } else {
+            min = vasyaAge;
+        }
+
+        if (katyaAge > vasyaAge && katyaAge > mishaAge) {
+            max = katyaAge;
+        } else if (katyaAge >= vasyaAge && katyaAge <= mishaAge) {
+            middle = katyaAge;
+        } else {
+            min = katyaAge;
+        }
+
+        if (mishaAge > vasyaAge && mishaAge > katyaAge) {
+            max = mishaAge;
+        } else if (mishaAge > vasyaAge && mishaAge < katyaAge) {
+            middle = mishaAge;
+        } else {
+            min = katyaAge;
+        }
+
+        System.out.println("MinimalAge " + min);
+        System.out.println("MiddleAge " + middle);
+        System.out.println("MaximumAge " + max);
+    }
+}
