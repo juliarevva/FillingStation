@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args) {
+        int volume = 1200;
+        int fillingSpeed = 30;
+        int devastationSpeed = 10;
+
+        int actualVolume = 0;
+        int time = 0;
+
+        while (actualVolume < volume) {
+            actualVolume = actualVolume + fillingSpeed - devastationSpeed;
+            time = time +1;
+            System.out.println(actualVolume);
+        }
+        System.out.println("Pool filling time is " + time + " hours");
+    }
+}
