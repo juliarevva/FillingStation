@@ -2,7 +2,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int value = new Scanner(System.in).nextInt();
+        int value;
+
+        System.out.println("Enter a number");
+        value = new Scanner(System.in).nextInt();
+
         for (int a = 1; a <= value; a = a + 1) {
             if (value % a != 0) {
                 continue;
