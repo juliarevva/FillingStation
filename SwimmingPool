@@ -10,7 +10,6 @@ public class Main {
         while (actualVolume < volume) {
             actualVolume = actualVolume + fillingSpeed - devastationSpeed;
             time = time +1;
-            System.out.println(actualVolume);
         }
         System.out.println("Pool filling time is " + time + " hours");
     }
